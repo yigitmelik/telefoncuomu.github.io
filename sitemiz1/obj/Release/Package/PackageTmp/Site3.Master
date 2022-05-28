@@ -1,0 +1,55 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site3.master.vb" Inherits="sitemiz1.Site3" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link href="../style.css" rel="stylesheet" />
+
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Admin sayfası</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="anasayfa.aspx">Ana Sayfa</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="iphoneadmin.aspx">Iphone Ekle</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="xiaomiadmin.aspx">Xiaomi Ekle</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="diğertelefonlaradmin.aspx">Diğer telefonlar Ekle</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="samsungadmin.aspx">Samsung ekle</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <form id="form1" runat="server">
+        <div class="row">
+                
+                <div class="col-md-12">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+  
+                </div>
+            </div>
+    </form>
+</body>
+</html>

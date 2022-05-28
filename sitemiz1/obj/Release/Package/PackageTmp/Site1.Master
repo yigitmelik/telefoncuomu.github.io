@@ -1,0 +1,68 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="sitemiz1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="anasayfa.aspx">Saylvegone</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="anasayfa.aspx">Ana Sayfa</a>
+        </li>
+        
+           <li class="nav-item">
+          <a class="nav-link" href="giris.aspx">Giriş</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="iphoneanasayfa.aspx">Iphone</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="xiaomianasayfa.aspx">Xiaomi</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="samsunganasayfa.aspx">Samsung</a>
+        </li>
+        
+        
+      </ul>
+        
+    </div>
+  </div>
+</nav>
+
+
+
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <hr />
+
+     <footer style="background-color:black; color:white; padding:10px">
+            <div class="text-center">
+                
+                <p>Adresimiz:Samsun reşadiye mah güney sok </p>
+                <p>Tel:05555555555 </p>
+                <p></p>
+            </div>
+        </footer>
+</body>
+</html>
